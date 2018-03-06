@@ -7,4 +7,4 @@ heatmapcode.R - An R Script that was used to create the heatmaps you see in this
 
 cleaning.R - This R Script was used to removed duplicate sequences and create a more concise csv file.
 
-Mouse 1 Data, 
+IgH Compiled CDR3 AAs (All individuals) (1).xlsx, Mouse 1 data.numbers, mouse1_data.csv are the datasets used in this project. IgH contains the complete AA sequences for all mouse individuals, while Mouse 1 data and mouse1_data contain the amino acid sequences for only the first mouse in IgH.
