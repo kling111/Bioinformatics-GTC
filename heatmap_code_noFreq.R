@@ -1,5 +1,6 @@
+library(readr)
+mouse1_data <- read_csv("~/Documents/My Documents/Bioinformatics proj/mouse1_data.csv") #You may have to change this to find the csv.file in your system
 View(mouse1_data) #or any dataset name you want to make a heatmap out of.
-
 
 aaVector <- AAStringSet()
 holder <- AAStringSet()
