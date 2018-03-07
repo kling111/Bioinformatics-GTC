@@ -1,6 +1,8 @@
 library(readr)
-mouse1_data <- read_csv("~/Documents/My Documents/Bioinformatics proj/mouse1_data.csv") #You may have to change this to find the csv.file in your system
-View(mouse1_data) #or any dataset name you want to make a heatmap out of.
+data <- read_csv("~/Documents/My Documents/Bioinformatics proj/mouse1_data.csv") #You may have to change this to find the csv.file in your system
+View(data) #mouse1_data is an example, any dataset that is formatted with amino sequences and relaive frequencies can use this code.
+#Alternatively, you can also use the import dataset button under the environment tab in RStudio, which would provide the same function as the code above.
+
 
 aaVector <- AAStringSet()
 holder <- AAStringSet()
@@ -9,7 +11,7 @@ holder <- AAStringSet()
 # 2:8759 is specific for this dataset, in general it should be firstValue:lastValue.
 for (num in 2:8759)
 {
-  holder = AAStringSet(mouse1_data$X2[num])
+  holder = AAStringSet(data$X2[num])
   
   aaVector = append(aaVector, holder)
   
