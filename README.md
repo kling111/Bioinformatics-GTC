@@ -12,3 +12,7 @@ cleaningData.R - This R Script was used to removed duplicate sequences and creat
 mouseData_H2O.R - This R Script highlights a few simple statements in H2O that set up the mouse1_data.csv for further analysis using H2O's deep learning technologies.
 
 IgH Compiled CDR3 AAs (All individuals) (1).xlsx, Mouse 1 data.numbers, mouse1_data.csv are the datasets used in this project. IgH contains the complete AA sequences for all mouse individuals, while Mouse 1 data and mouse1_data contain the amino acid sequences for only the first mouse in IgH.
+
+
+source("https://bioconductor.org/biocLite.R")
+biocLite("Biostrings")
