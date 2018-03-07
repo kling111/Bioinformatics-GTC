@@ -1,13 +1,15 @@
 #Here I find the urlPath of the mouse on my system
 #Then I upload that csv file to the h2o directory
-mousePath = "/Users/karanlingineni/Documents/My\ Documents/Bioinformatics\ proj/mouse1_data.csv"
+mousePath = "https://raw.githubusercontent.com/kling111/Bioinformatics-GTC/master/mouse1_data.csv"
 mouse.hex = h2o.importFile(path = mousePath)
 
 #The anyFactor() function helps us figure out if there are any columns in the file that contain categorical data
 h2o.anyFactor(mouse.hex)
 
 #This allows us to view the data, now in a 5-number summary.
+options(warn=-1)
 summary(mouse.hex)
+options(warn=0)
 
 #This function creates a more specific quantile number summary
 quantile(x = mouse.hex$C3, na.rm = TRUE)
