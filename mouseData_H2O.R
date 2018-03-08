@@ -1,3 +1,6 @@
+library(h2o)
+h2o.init()
+
 #Here I find the urlPath of the mouse on my system
 #Then I upload that csv file to the h2o directory
 mousePath = "https://raw.githubusercontent.com/kling111/Bioinformatics-GTC/master/mouse1_data.csv"
